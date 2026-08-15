@@ -12,7 +12,7 @@ if not BOT_TOKEN or not GEMINI_KEY:
     raise ValueError("BOT_TOKEN এবং GEMINI_KEY environment variable হিসেবে সেট করতে হবে")
 
 client = genai.Client(api_key=GEMINI_KEY)
-MODEL = "gemini-2.5-flash-lite"
+MODEL = "gemini-3.6-flash"
 
 bot = telebot.TeleBot(BOT_TOKEN)
 user_data = {}
